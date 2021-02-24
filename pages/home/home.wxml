@@ -1,3 +1,23 @@
 <!--pages/home/home.wxml-->
-<text class="title">Hello Uni-App</text>
-<button size="mini">按钮</button>
+<!-- <text class="title">Hello Uni-App</text>
+<button size="mini">按钮</button> -->
+
+<!-- 1、小程序的数据绑定 -->
+<view>Hello {{name}}</view>
+<!-- 2、列表展示 -->
+<view wx:for="{{students}}" wx:key="index">{{item.age}}  {{index}}</view>
+<!-- 3、事件监听改变数据 -->
+<view>当前计数：{{counter}}</view>
+<button size="mini" bindtap="incBtnClick">+</button>
+<button size="mini" bindtap="subBtnClick">-</button>
+
+<!-- <view wx:for="{{list}}" wx:key="index">{{item.price}}</view> -->
+
+<text user-select="{{true}}">\nHello MiniApp</text>
+<view class="textClass" hover-class="hoverText" hover-stay-time="1000">text</view>
+<!-- <image src="/assets/tabbar/cart.png"/> -->
+
+
+<button bindtap="handleChooseAlbum">选择图片</button>
+<image src='{{imagePath}}'></image>
+<input/>

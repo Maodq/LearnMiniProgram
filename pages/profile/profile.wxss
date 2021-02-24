@@ -1,0 +1,17 @@
+/* pages/profile/profile.wxss */
+.box {
+  font-size: 30px;
+}
+.active {
+  color: red;
+}
+.container {
+  display: flex;
+  text-align: center;
+}
+.content {
+  flex: 1;
+}
+.activeClass {
+  color: red;
+}

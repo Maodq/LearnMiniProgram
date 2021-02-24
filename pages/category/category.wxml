@@ -1,0 +1,19 @@
+<!--pages/category/category.wxml-->
+<text>pages/category/category.wxml</text>
+<view>我是分类页面</view>
+
+<input type="text"
+        bindinput="handleInput"
+        bindfocus="handleFocus"
+        bindblur="handleBlur"
+/>
+
+<!-- 水平滚动：scroll-x -->
+<scroll-view class="contain1" scroll-x>
+  <view wx:for="{{10}}" wx:key="index" class="item1">{{item}}</view>
+</scroll-view>
+
+<!-- 垂直滚动：scroll-y -->
+<scroll-view class="contain2" scroll-y bindscroll="handleScroll">
+  <view wx:for="{{10}}" wx:key="index" class="item2">{{item}}</view>
+</scroll-view>

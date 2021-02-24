@@ -1,0 +1,15 @@
+{/* <wxs module = "info"> */}
+  var messages = '小红'
+  function sum(sum1, sum2) {
+    return sum1 + sum2
+  }
+  function saveFixed2(value, number) {
+    var number = number || 2
+    return value.toFixed(number)
+  }
+  module.exports = {
+    messages:messages,
+    sum:sum,
+    saveFixed2:saveFixed2
+  }
+// </wxs>

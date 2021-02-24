@@ -1,0 +1,13 @@
+/* pages/cart/cart.wxss */
+
+@import  '../style/weui-searchbar.wxss';
+.title {
+  font-weight: 500rpx;
+  background: green;
+}
+.red {
+  color: red;
+}
+.yellow {
+  color: yellow;
+}

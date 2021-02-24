@@ -1,0 +1,43 @@
+<!--pages/profile/profile.wxml-->
+<text>pages/profile/profile.wxml</text>
+<view>{{nowTime}}</view>
+<button size="mini" bindtap="handleSwitchColor">切换颜色</button>
+<view class="box {{isSwitch ? 'active' : ''}}">嘿嘿嘿</view>
+<view hidden="{{false}}">隐藏了吗？</view>
+
+<!-- <template name="contentItem">
+<button>{{btnContent}}</button>
+<view>{{textContent}}</view>
+</template> -->
+<import  src="../../wxml/template.wxml"/>
+<template is='contentItem' data="{{btnContent:'按钮', textContent:'呵呵呵'}}">
+</template>
+
+<!-- <wxs module = "info">
+  var messages = '小红'
+  function sum(sum1, sum2) {
+    return sum1 + sum2
+  }
+  module.exports = {
+    messages:messages,
+    sum:sum
+  }
+</wxs> -->
+<wxs src="../../wxs/info.wxs" module="info"/>
+
+<view>{{info.messages}}</view>
+<view>{{info.sum(20, 30)}}</view>
+<view>{{info.saveFixed2(3.1415926,5)}}</view>
+<view class="container">
+<block wx:for="{{productList}}" wx:key="index">
+  <view class="content {{index === currentIndex ? 'activeClass' : ''}}" 
+        bindtap="handleClick" data-item="{{item}}" data-index="{{index}}">
+        {{item}}
+      </view>
+</block>
+</view>
+
+  <w-tab-control title="{{title}}" bind:titleClick="handleTitleClick"/>
+
+
+

@@ -1,0 +1,27 @@
+/* pages/category/category.wxss */
+input {
+  border: 1px solid black;
+  margin: 10px 10px;
+}
+.contain1 {
+  height: 120px;
+  background: gray;
+  white-space: nowrap;
+}
+.item1 {
+  width: 100px;
+  height: 100px;
+  background: greenyellow;
+  margin: 10px;
+  display: inline-block;
+}
+.contain2 {
+  height: 200px;
+  background: rgb(214, 83, 149);
+  margin: 20px 0px;
+}
+.item2 {
+  background: rgb(32, 144, 163);
+  height: 100px;
+  margin: 10px;
+}

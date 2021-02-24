@@ -1,0 +1,17 @@
+/* components/w-tab-control/w-tab-control.wxss */
+
+.titleContain {
+  height: 98rpx;
+  background: #f0f0f0;
+  display: flex;
+  text-align: center;
+  justify-content: space-around;
+}
+.tab-item {
+ margin-top: 28rpx;
+}
+.active {
+  color: red;
+  border-bottom: 4rpx solid red;
+  margin-bottom: 8rpx;
+}

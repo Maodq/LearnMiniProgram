@@ -3,3 +3,16 @@
   color: pink;
   font-size:30px;
 }
+.textClass {
+  width: 100px;
+  height: 100px;
+  background: pink;
+}
+.hoverText {
+  background: yellow;
+  font-size: 30px;
+}
+input {
+  border: 1px solid black;
+  margin: 10px 10px;
+}

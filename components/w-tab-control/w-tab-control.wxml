@@ -1,0 +1,13 @@
+<!--components/w-tab-control/w-tab-control.wxml-->
+<view class="titleContain">
+  <block wx:for="{{title}}" wx:key="index">
+    <view class="tab-item {{currentIndex == index ? 'active' : ''}}"
+          bind:tap="onItemClick"
+          data-index="{{index}}" 
+          data-item="{{item}}"
+          >
+          <!-- 我们点击组件时，可以通过data- 传递数据，但是一个点击如果像传多条数据呢。这时候可以用 data-xxx='{{[xxx,xxx]}}' 来传递数据了 -->    
+      <text>{{item}}</text>
+    </view>
+  </block>
+</view>
